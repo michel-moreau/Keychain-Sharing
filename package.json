@@ -13,6 +13,7 @@
         "url": "git+https://github.com/michel-moreau/Keychain-Sharing.git"
     },
     "keywords": [
+        "ecosystem:cordova",
         "cordova",
         "keychain",
         "cordova-ios"
