@@ -55,7 +55,7 @@ module.exports = function (context) {
 
 
       // create a new entitlements plist file
-      //var sourceFile = 'plugins/cordova-plugin-keychainsharing/src/ios/resources/KeychainSharing.entitlements';
+      //var sourceFile = 'plugins/cordova-plugin-keychain-sharing/src/ios/resources/KeychainSharing.entitlements';
       var sourceFile = path.join(context.opts.plugin.pluginInfo.dir, 'src/ios/resources/KeychainSharing.entitlements');
       fs.readFile(sourceFile, 'utf8', function (err, data) {
         data = data.replace(/__KEYCHAIN_ACCESS_GROUP__/g, sharedBundleID);

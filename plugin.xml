@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <plugin
     id="cordova-plugin-keychain-sharing"
-    version="1.0.4"
+    version="1.0.5"
     xmlns="http://apache.org/cordova/ns/plugins/1.0">
 
   <name>Keychain Sharing</name>
@@ -47,7 +47,7 @@
     <framework src="Security.framework"/>
 
     <hook type="after_plugin_install" src="src/ios/hooks/prerequisites.js"/>
-    <hook type="after_plugin_install" src="src/ios/hooks/install_entitlements.js"/>
+    <hook type="after_prepare" src="src/ios/hooks/install_entitlements.js"/>
   </platform>
 
 </plugin>
