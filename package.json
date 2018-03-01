@@ -1,6 +1,6 @@
 {
     "name": "cordova-plugin-keychain-sharing",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "CodePush Plugin for Keychain Sharing",
     "cordova": {
         "id": "cordova-plugin-keychain-sharing",
