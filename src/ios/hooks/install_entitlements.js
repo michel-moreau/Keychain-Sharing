@@ -44,6 +44,7 @@ module.exports = function (context) {
     var destFile = path.join(iosFolder, projName, 'Resources', projName + '.entitlements');
     if (fs.existsSync(destFile)) {
       console.error("File exists, not doing anything: " + destFile);
+      deferral.resolve();
     } else {
       console.log("Will add iOS Keychain Sharing entitlements to project '" + projName + "'");
 
